@@ -292,20 +292,23 @@ const Basic = () => {
                 >
                   State
                 </label>
-                <input
+                <Field
                   style={{
                     marginLeft: "35px",
-                    width: "358px",
+                    width: "246px",
+                    height: "30px",
                     borderRadius: "5px",
                     border: "1px solid black",
                   }}
-                  placeholder="Enter State"
-                  type="state"
                   name="state"
-                  onChange={handleChange}
-                  onBlur={handleBlur}
-                  value={values.state}
-                />
+                  as="select"
+                  className="my-select"
+                >
+        
+                  <option value="Delhi">Delhi</option>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="others">Others</option>
+                </Field>
                 <label
                   htmlFor="city"
                   style={{ fontSize: "15px", marginLeft: "80px" }}
